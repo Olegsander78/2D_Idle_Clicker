@@ -844,6 +844,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 687d4ab4156c80442924fc2f49a71505, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CurrentHealth: 10
+  MaxHealth: 10
+  GoldToGive: 1
+  HealthBarFill: {fileID: 1216332728}
 --- !u!1 &1505121650
 GameObject:
   m_ObjectHideFlags: 0
@@ -963,7 +967,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1505121652}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1225067969}
+        m_TargetAssemblyTypeName: Enemy, Assembly-CSharp
+        m_MethodName: Damage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1833663343
 GameObject:
   m_ObjectHideFlags: 0

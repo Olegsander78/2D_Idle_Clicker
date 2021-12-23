@@ -1,18 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public int CurrentHealth;
+    public int MaxHealth;
+    public int GoldToGive;
+    public Image HealthBarFill;
+
+    public void Damage()
     {
-        
+        CurrentHealth--;
+        HealthBarFill.fillAmount = (float)CurrentHealth / (float)MaxHealth;
+
+        if (CurrentHealth <= 0)
+        {
+            Defeated();
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Defeated()
     {
-        
+        Debug.Log("Defeated");
     }
 }
