@@ -9,11 +9,15 @@ public class Enemy : MonoBehaviour
     public int MaxHealth;
     public int GoldToGive;
     public Image HealthBarFill;
+    public Animation Anim;
 
     public void Damage()
     {
         CurrentHealth--;
         HealthBarFill.fillAmount = (float)CurrentHealth / (float)MaxHealth;
+
+        Anim.Stop();
+        Anim.Play();
 
         if (CurrentHealth <= 0)
         {

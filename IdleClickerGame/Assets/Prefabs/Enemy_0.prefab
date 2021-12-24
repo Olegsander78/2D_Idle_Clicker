@@ -88,6 +88,7 @@ GameObject:
   - component: {fileID: 8482033496276503245}
   - component: {fileID: 8482033496276503244}
   - component: {fileID: 8482033496276503246}
+  - component: {fileID: 3799579136348234316}
   m_Layer: 5
   m_Name: EnemyButton
   m_TagString: Untagged
@@ -208,6 +209,22 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!111 &3799579136348234316
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8482033496276503242}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 0ac4d3ec0ed3a9146945c8674949cbd8, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 0ac4d3ec0ed3a9146945c8674949cbd8, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &8482033496539648519
 GameObject:
   m_ObjectHideFlags: 0
@@ -262,6 +279,7 @@ MonoBehaviour:
   MaxHealth: 10
   GoldToGive: 1
   HealthBarFill: {fileID: 8482033496558083072}
+  Anim: {fileID: 3799579136348234316}
 --- !u!1 &8482033496558083086
 GameObject:
   m_ObjectHideFlags: 0

@@ -180,7 +180,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: x10
+  m_text: x 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -942,7 +942,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1931955445}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2020976116}
+        m_TargetAssemblyTypeName: ClickerManager, Assembly-CSharp
+        m_MethodName: OnBuyAutoClicker
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1931955445
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -992,6 +1004,7 @@ GameObject:
   - component: {fileID: 2020976113}
   - component: {fileID: 2020976114}
   - component: {fileID: 2020976115}
+  - component: {fileID: 2020976116}
   m_Layer: 0
   m_Name: _GameManager
   m_TagString: Untagged
@@ -1045,6 +1058,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Gold: 0
   GoldText: {fileID: 964287430}
+  Backgrounds:
+  - {fileID: 21300000, guid: 96c8a2b22d73ec34fbf47b3786d35e3d, type: 3}
+  - {fileID: 21300000, guid: 212c31cfcc7457742aec0b93673b333a, type: 3}
+  - {fileID: 21300000, guid: 0848952ed2720ca41847fec8443e653d, type: 3}
+  - {fileID: 21300000, guid: d672f5029aba74b4bbc2b256202ab044, type: 3}
+  - {fileID: 21300000, guid: 6bf0f889f018a544bacbffbe39d2d313, type: 3}
+  BackgroundImage: {fileID: 900844396}
+--- !u!114 &2020976116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2020976112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57b30cb2c642f1f4ba1b283ccfe1e3be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AutoClickerLastTime: []
+  AutoClickerPrice: 10
+  QuantityText: {fileID: 168268450}
 --- !u!1001 &2747703238630380439
 PrefabInstance:
   m_ObjectHideFlags: 0
